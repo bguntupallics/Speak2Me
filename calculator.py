@@ -1,4 +1,3 @@
-import math
 import speech_recognition as sr
 
 accepted_terms = [
@@ -53,4 +52,3 @@ def calculate(command):
         return float(a / b)
     elif command[1] == "**":
         return float(a ** b)
-
