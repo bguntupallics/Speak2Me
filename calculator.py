@@ -2,7 +2,7 @@ import math
 import speech_recognition as sr
 
 accepted_terms = [
-    "add", "subtract", "multiply", "divide", "squared", "cube root"
+    "add", "subtract", "multiply", "divide", "squared", "cube root", "^", "*", "/", "√", "-", "+", "power", "cubed"
 ]
 
 
@@ -22,8 +22,7 @@ def parse(text):
         if words[i].isnumeric():
             command.append(int(words[i]))
         elif words[i] == "^":
-            operation = "**"
-            command.append(operation)
+            command.append("**")
         elif words[i] == "/":
             command.append(words[i])
         elif words[i] == "*":
@@ -32,8 +31,26 @@ def parse(text):
             command.append(words[i])
         elif words[i] == "+":
             command.append(words[i])
+        elif words[i] == "cubed":
+            command.append(3)
+            command.append("**")
+        elif words[i] == "squared":
+            command.append(2)
+            command.append("**")
     return command
 
 
 def calculate(command):
-    pass
+    a = command[0]
+    b = command[2]
+    if command[1] == "+":
+        return float(a + b)
+    elif command[1] == "-":
+        return float(a - b)
+    elif command[1] == "*":
+        return float(a * b)
+    elif command[1] == "/":
+        return float(a / b)
+    elif command[1] == "**":
+        return float(a ** b)
+
