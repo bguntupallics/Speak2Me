@@ -1,7 +1,7 @@
 import speech_recognition as sr
 import lyricsgenius
 
-genius = lyricsgenius.Genius("iGDnfitT658AgmGeWByUI0QrAmiUbJKv1d2LnPojGzDE2aCELIza1l8lBDxr5onD")
+genius = lyricsgenius.Genius("CLIENT ACCESS TOKEN")
 
 
 def run(speech_to_text):

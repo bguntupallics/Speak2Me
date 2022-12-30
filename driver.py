@@ -8,9 +8,8 @@ import calculator
 speech_to_text = sr.Recognizer()
 
 commands = [
-    "calculate", "calculator", "translate", "Translate", "Translator", "translator",
-    "Find a song", "Find the song", "find a song", "find the song", "Write to file", "write to file", "Speech to text",
-    "speech to text", "transcribe"
+    "calculate", "calculator", "translate", "translator", "find a song", "find the song", "write to file",
+    "speech to text", "transcribe", "write to a file", "shazam"
 ]
 
 
