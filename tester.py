@@ -2,7 +2,7 @@ import speech_recognition as sr
 from googletrans import Translator
 import lyricsgenius
 
-genius = lyricsgenius.Genius("iGDnfitT658AgmGeWByUI0QrAmiUbJKv1d2LnPojGzDE2aCELIza1l8lBDxr5onD")
+genius = lyricsgenius.Genius("CLIENT ACCESS TOKEN HERE")
 translator = sr.Recognizer()
 trans = Translator()
 
