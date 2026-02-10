@@ -52,13 +52,7 @@ pip install -r requirements.txt
 
 ### Configuration
 
-Copy the example env file and fill in your keys:
-
-```bash
-cp .env.example .env
-```
-
-Edit `.env` with your actual credentials.
+Edit `.env` with your actual credentials and API keys.
 
 ### Supabase Database Setup
 
